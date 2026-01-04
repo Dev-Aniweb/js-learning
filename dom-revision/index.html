@@ -1,27 +1,48 @@
 <!DOCTYPE html>
+<!-- This declares that the document is an HTML5 document -->
+
 <html lang="en">
+<!-- Root element of the HTML document with language set to English -->
 
 <head>
     <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8, which supports most characters -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling on mobile devices -->
+
     <title>Document</title>
+    <!-- The title that will appear in the browser tab -->
 </head>
 
 <body>
- 
+    <!-- The visible content of the webpage goes inside the body -->
 
     <div>
-        <input id="title" type="text" placeholder="title"/>
-          <br/>
-        <input id="description" type="text" placeholder="description"/>
-        <br/>
-        <button onclick="addtodo()">add todo</button> <br/>
-    </div>
-    <div id="todos"> 
-       
-    </div>
-     <script src="script.js"></script>
+        <!-- Container for the input fields and button -->
 
+        <input id="title" type="text" placeholder="title"/>
+        <!-- Text input for entering the title of a todo item
+             'id' allows JavaScript to access this element
+             'placeholder' shows gray text when input is empty -->
+        <br/>
+        <!-- Line break to move the next input to a new line -->
+
+        <input id="description" type="text" placeholder="description"/>
+        <!-- Text input for entering the description of the todo item -->
+        <br/>
+
+        <button onclick="addtodo()">add todo</button>
+        <!-- Button that runs the JavaScript function 'addtodo()' when clicked -->
+        <br/>
+    </div>
+
+    <div id="todos"> 
+        <!-- Container where the todo items will be displayed dynamically -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file named 'script.js' where the addtodo function is defined -->
 </body>
 
 </html>
