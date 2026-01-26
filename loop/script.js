@@ -87,31 +87,57 @@
 
 //prime num hai ya nhi 
 
-let n=Number(prompt(" enter your number "));
-if(isNaN(n)){
-    console.log(" invalid number ")
+// let n=Number(prompt(" enter your number "));
+// if(isNaN(n)){
+//     console.log(" invalid number ")
 
-}
-else{
+// }
+// else{
    
-     if(n>0){
+//      if(n>0){
 
         
-        let primehai =true;
-        for(let i=2 ;i<=n/2;i++){
-            if(n%i===0){
+//         let primehai =true;
+//         for(let i=2 ;i<=n/2;i++){
+//             if(n%i===0){
 
-                primehai = false;
-                break;
-            }
+//                 primehai = false;
+//                 break;
+//             }
         
-        }
+//         }
       
-       console.log(primehai);
+//        console.log(primehai);
       
 
-    }
-    else{
-        console.log("number is neagative")
-    }
+//     }
+//     else{
+//         console.log("number is neagative")
+//     }
+// }
+
+
+
+//while loop
+
+// let n= Number (prompt("enter a number "));
+// let sum=0;
+// while(n>0){
+//     let rem= n%10;
+//     sum =sum+rem;
+//     n=Math.floor(n/10);
+
+// }
+// console.log((sum));
+
+//reverseee
+
+let n= Number (prompt("enter a number "));
+let rev=0;
+while(n>0){
+    let rem= n%10;
+    rev =rev*10+rem;
+    n=Math.floor(n/10);
+
 }
+console.log((rev));
