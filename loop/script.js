@@ -145,22 +145,47 @@
 // find strong number 
 
 
-let n= Number (prompt("enter a number "));
-let sum=0;
-let copy=n;
-while(n>0){
-    let rem= n%10;
-    let fact=1
-    for(let i=1 ;i<=rem;i++){
-       fact= fact*i;
-    }
-    sum=sum+fact
-    n=Math.floor(n/10);
+// let n= Number (prompt("enter a number "));
+// let sum=0;
+// let copy=n;
+// while(n>0){
+//     let rem= n%10;
+//     let fact=1
+//     for(let i=1 ;i<=rem;i++){
+//        fact= fact*i;
+//     }
+//     sum=sum+fact
+//     n=Math.floor(n/10);
 
+// }
+// if(copy===sum){
+//     console.log("strong")
+// }
+// else {
+//     console.log("not strong")
+// }
+
+
+// guss the number 
+
+let random= Math.floor(Math.random()*100+1);
+
+let guess=0;
+while(guess !== random){
+guess=Number(prompt("enter a number "))
+    if(isNaN(guess)|| guess>100|| guess<1){
+    console.log("enter numer 1 to 100 b/w ")
+    continue;
 }
-if(copy===sum){
-    console.log("strong")
+if(guess>random) {
+    console.log("number is to high")
+    }
+else if(guess<random){
+    console.log("number is too low")
 }
-else {
-    console.log("not strong")
+else{
+    console.log("you find the number " , guess);
 }
+}
+
+
