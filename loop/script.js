@@ -132,12 +132,35 @@
 
 //reverseee
 
+// let n= Number (prompt("enter a number "));
+// let rev=0;
+// while(n>0){
+//     let rem= n%10;
+//     rev =rev*10+rem;
+//     n=Math.floor(n/10);
+
+// }
+// console.log((rev));
+
+// find strong number 
+
+
 let n= Number (prompt("enter a number "));
-let rev=0;
+let sum=0;
+let copy=n;
 while(n>0){
     let rem= n%10;
-    rev =rev*10+rem;
+    let fact=1
+    for(let i=1 ;i<=rem;i++){
+       fact= fact*i;
+    }
+    sum=sum+fact
     n=Math.floor(n/10);
 
 }
-console.log((rev));
+if(copy===sum){
+    console.log("strong")
+}
+else {
+    console.log("not strong")
+}
